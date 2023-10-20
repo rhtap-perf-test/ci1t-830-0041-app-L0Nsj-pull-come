@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-tiya
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoup_perfscale/ci1t-830-0041-tenant/ci1t-830-0041-app/devfile-sample-tiya@sha256:5312e9541e75841608637d148079c809b292b2eb886e3b536bc98ac3f24e8629
+        name: my-nodejs
+        resources: {}
+status: {}
